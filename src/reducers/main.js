@@ -6,7 +6,7 @@ var rootReducer = () => {
   return combineReducers({
      videoList,
      currentVideo
-  )}
+  })
 };
 
 //TODO: define the root reducer for this app

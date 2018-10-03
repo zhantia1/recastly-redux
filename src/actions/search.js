@@ -5,6 +5,7 @@ import YOUTUBE_API_KEY from '../config/youtube.js';
 
 
 var handleVideoSearch = (q) => {
+  
   return (dispatch) => {
 
     var options = {
@@ -15,7 +16,7 @@ var handleVideoSearch = (q) => {
     searchYouTube(options, (videos) => {
 
       dispatch(changeVideoList(videos));
-      dispatch(currentVideo(videos[0]));
+      dispatch(changeVideo(videos[0]));
 
     })
   }
