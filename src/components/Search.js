@@ -2,18 +2,17 @@ import React from 'react';
  
 class Search extends React.Component {
   constructor(props) {
+    console.log('from search:', props.handleSearchInputChange)
     super(props);
 
-    this.state = {
-      value: ''
-    };
+    // this.state = {
+    //   value: ''
+    // };
   }
 
   handleInputChange(e) {
+    console.log('hi');
     this.props.handleSearchInputChange(e.target.value);
-    this.setState({
-      value: e.target.value
-    });
   }
 
   render() {
@@ -22,8 +21,8 @@ class Search extends React.Component {
         <input
           className="form-control"
           type="text"
-          value={this.state.value}
-          onChange={this.handleInputChange.bind(this)}
+          value={this.props.value}
+          onChange={this.props.handleSearchInputChange}
         />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>

@@ -30,31 +30,31 @@ export default class App extends React.Component {
   //   this.setState({currentVideo: video});
   // }
 
-  getYouTubeVideos(query) {
-    // var options = {
-    //   key: this.props.API_KEY,
-    //   query: query
-    // };
+  // getYouTubeVideos(query) {
+  //   // var options = {
+  //   //   key: this.props.API_KEY,
+  //   //   query: query
+  //   // };
     
-    var options = {
-      key: YOUTUBE_API_KEY,
-      query: q
-    };
+  //   // var options = {
+  //   //   key: YOUTUBE_API_KEY,
+  //   //   query: q
+  //   // };
 
-    this.props.searchYouTube(options, (videos) => {
+  //   // this.props.searchYouTube(options, (videos) => {
 
-      dispatch(changeVideoList(videos));
-      dispatch(changeVideo(videos[0]));
+  //   //   dispatch(changeVideoList(videos));
+  //   //   dispatch(changeVideo(videos[0]));
 
-    })
+  //   // })
 
-    // this.props.searchYouTube(options, (videos) =>
-    //   this.setState({
-    //     videos: videos,
-    //     currentVideo: videos[0]
-    //   })
-    // );
-  }
+  //   // this.props.searchYouTube(options, (videos) =>
+  //   //   this.setState({
+  //   //     videos: videos,
+  //   //     currentVideo: videos[0]
+  //   //   })
+  //   // );
+  // }
 
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
