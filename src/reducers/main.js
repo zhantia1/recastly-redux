@@ -9,6 +9,8 @@ import videoList from './videoList.js';
 //   })
 // };
 
+// rootReducer sets the key values in store to the return result from
+// the two small reducers you passed in (they are diff name due to import)
 var rootReducer = combineReducers({videoList, currentVideo});
 
 

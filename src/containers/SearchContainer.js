@@ -11,11 +11,11 @@ import handleVideoSearch from '../actions/search.js';
 //HINT: use react-redux 'connect' method to generate a container component from
 //state and dispatch mappings.
 
-
+// basically not needed
 const mapStateToProps = (state) => {
   return {
-      video: state.video,
-      videos: state.videos
+      // video: state.video,
+      // videos: state.videos
   };
 };
 
