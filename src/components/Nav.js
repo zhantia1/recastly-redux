@@ -5,7 +5,7 @@ import SearchContainer from '../containers/SearchContainer.js';
 //  you wrote in the 'containers' directory.
   
 var Nav = (props) => {
-  console.log('from NAV:', props);
+  //console.log('from NAV:', props);
   return(
   <nav className="navbar">
     <div className="col-md-6 col-md-offset-3">

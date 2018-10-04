@@ -10,19 +10,20 @@ class Search extends React.Component {
     // };
   }
 
-  handleInputChange(e) {
-    console.log('hi');
-    this.props.handleSearchInputChange(e.target.value);
-  }
+  // handleInputChange(e) {
+  //   console.log('hi');
+  //   this.props.handleSearchInputChange(e.target.value);
+  // }
 
   render() {
+    //console.log('from render:', this.props.handleSearchInputChange)
     return (
       <div className="search-bar form-inline">
         <input
           className="form-control"
           type="text"
           value={this.props.value}
-          onChange={this.props.handleSearchInputChange}
+          onChange={(event) => this.props.handleSearchInputChange(event.target.value)}
         />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>

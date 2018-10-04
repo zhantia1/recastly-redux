@@ -23,8 +23,8 @@ const mapDispatchToProps = (dispatch) => {
   
   return {
     handleSearchInputChange: (q) => {
-      console.log('test', q);
-      dispatch(handleVideoSearch(q.toString()))}
+      //console.log('test', q);
+      return dispatch(handleVideoSearch(q))}
   };
 };
 
