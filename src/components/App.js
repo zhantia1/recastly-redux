@@ -22,9 +22,9 @@ export default class App extends React.Component {
     // };
   }
 
-  componentWillMount() {
-    //this.props.handleVideoSearch('react tutorials');
-  }
+  // componentWillMount() {
+  //   //this.props.handleVideoSearch('react tutorials');
+  // }
 
   // handleVideoListEntryTitleClick(video) {
   //   this.setState({currentVideo: video});

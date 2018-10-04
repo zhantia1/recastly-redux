@@ -2,7 +2,7 @@ import React from 'react';
  
 class Search extends React.Component {
   constructor(props) {
-    console.log('from search:', props.handleSearchInputChange)
+    //console.log('from search:', props.handleSearchInputChange)
     super(props);
 
     // this.state = {
